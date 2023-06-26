@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SmoothDamp : MonoBehaviour
@@ -27,7 +25,7 @@ public class SmoothDamp : MonoBehaviour
     void MoveWithSmoothDamp() {
         transform.position = Vector3.SmoothDamp(transform.position, EndPos, ref velocity, smoothTime.value);
 
-        if (Vector3.Distance(transform.position, EndPos) <= 0.5) {
+        if (Vector3.Distance(transform.position, EndPos) <= 0.001) {
             //swap
             Vector3 temp = StartPos;
             StartPos = EndPos;
