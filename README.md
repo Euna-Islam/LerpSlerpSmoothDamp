@@ -7,6 +7,6 @@ Starts out fast, gets slower when target is near
 ## Slerp
 While Lerp always gives a line, Slerp gives us points like the circumference of a circle which means it gives a uniform curve
 ## SmoothDamp
-Starts slow, gets fast in the middle, gets fast at the end again
+Starts slow, gets fast in the middle, gets slow at the end again
 ## MoveTowards
 With MoveTowards object moves at a constant speed
